@@ -21,6 +21,8 @@ To use a standard U-Net, you have to change the model and Dataloader in line 11
 "from module import spidermodel as md, ISBI2012Data_2 as ISBI" for SiamU-Net
 "from module import model as md, ISBI2012Data as ISBI" for a U-Net
 
+ISBI 2012 is not included. Download the files from the ISBI 2012 website. Paths are hardcoded into the main_isbi.py file, which you have to adapt to your own needs.
+
 ```
 usage: start the main_isbi.py file
 ```
