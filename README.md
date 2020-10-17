@@ -12,7 +12,7 @@ GNU GENERAL PUBLIC LICENSE
 
 
 ## Dependencies
-*   Pytorch, Python7,CUDA, scipy, sacred ( <https://github.com/IDSIA/sacred> )
+*   Pytorch, Python 3, CUDA, scipy, sacred ( <https://github.com/IDSIA/sacred> )
  
 
 ## Usage
