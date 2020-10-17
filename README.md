@@ -2,6 +2,7 @@
 A spatio temporal U-Net Version for the ISBI 2012 Dataset.
 To segment image t+1, we use a separate encoder branch which focuses on image t. In the latent space, both images t and t+1 are connected. The output of SiamU-Net is a segmentation of image t+1.
 It is important to note that weights are not shared between both encoder paths!
+
 ![Image of SiamU-Net](https://github.com/Mastercorp/SiamU-Net/blob/main/SiamU-Net.png)
 
 # Introduction
