@@ -77,8 +77,6 @@ ISBI 2012 Segmentation Challenge
 <http://brainiac2.mit.edu/isbi_challenge/home>   
 Ignacio Arganda-Carreras, Srinivas C. Turaga, Daniel R. Berger, Dan Ciresan, Alessandro Giusti, Luca M. Gambardella, Jürgen Schmidhuber, Dmtry Laptev, Sarversh Dwivedi, Joachim M. Buhmann, Ting Liu, Mojtaba Seyedhosseini, Tolga Tas
 
-Master Thesis:
-
-Manuel Danner
-SiamU-Net, "Semantic Segmentation of Image Sequences Using a Spatio-Temporal U-Net", TU Wien
+SiamU-Net
+Introduction of the SiamU-Net in the master-thesis: "Semantic Segmentation of Image Sequences Using a Spatio-Temporal U-Net", Manuel Danner, TU Wien
 <https://repositum.tuwien.at/bitstream/20.500.12708/15636/2/Semantic%20Segmentation%20of%20Image%20Sequences%20Using%20a%20Spatio-Temporal%20U-Net.pdf>
