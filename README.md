@@ -22,7 +22,7 @@ To use a standard U-Net, you have to change the model and Dataloader in line 11
 "from module import model as md, ISBI2012Data as ISBI" for a U-Net
 
 ```
-usage: start main_isbi.py 
+usage: start the main_isbi.py file
 ```
 
 ## Settings 
