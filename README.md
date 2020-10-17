@@ -30,6 +30,22 @@ ISBI 2012 is not included. Download the files from the ISBI 2012 website. Paths 
 ```
 usage: start the main_isbi.py file
 ```
+## Dataaugmentation
+in the module/dataaug.py you can find a novel solution for random elastic transformations called Elastic Gradient Transformation (EGT, as described in my master thesis Semantic Segmentation of Image Sequences Using a Spatio-Temporal U-Net). The method "def gradtrans(img, scalex, scaley, sigma)" implements the basic idea. Instead of a random field which is put over an image, the gradient is used to capture some additonal information before transforming the image. Different random scaling values are used to introduce a randomness to the image ( as seen in module/ISBI2012Data.py)
+
+```
+sigma = random.randint(self.augment["sigmamin"], self.augment["sigmamax"])
+# to shift in gradient direction -, else it shifts in the other direction
+scalex = random.randint(self.augment["minscale"], self.augment["maxscale"])
+scaley = random.randint(self.augment["minscale"], self.augment["maxscale"])
+if random.random() < 0.5:
+    scalex = scalex * -1
+if random.random() < 0.5:
+    scaley = scaley * -1
+img, indices = dataaug.gradtrans(img, scalex, scaley, sigma)
+```
+
+
 
 ## Settings 
 Sacred is a tool to help you configure, organize, log and reproduce experiments. All important settings can be changed in the config.json file. ( only the dataset direction is hardcoded into main.py at line 176 to 187. If you use another dataset, just change the used direction. )
