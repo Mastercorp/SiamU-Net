@@ -1,0 +1,33 @@
+{
+  "augment": {
+    "sigmamin": 70,
+    "angleparts": 36,
+    "sigmamax": 90,
+    "minscale": 2000,
+    "maxscale": 4000,
+    "angle": 0.0,
+    "flipping": 0.0,
+    "dataaug": 0.0
+  },
+  "params": {
+    "batch_size": 1,
+    "workers": 4,
+    "learningrate": 0.001,
+    "momentum": 0.99,
+    "weightdecay": 0,
+    "startepoch": 0,
+    "epochs": 300,
+    "resume": "",
+    "evaluate": false,
+    "saveimages": true,
+    "savedir": "./images/",
+    "cpu": false,
+    "padding": true,
+    "txtinfo": true,
+    "classweight": [
+      5.0,
+      1.0
+    ],
+    "classes":2
+  }
+}
