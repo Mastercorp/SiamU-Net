@@ -1,5 +1,5 @@
 # SiamU-Net
-A spatio temporal U-Net Version
+A spatio temporal U-Net Version for the ISBI 2012 Dataset.
 
 # Introduction
 SiamU-Net is a spatio temporal U-Net implementation in python using pytorch.
@@ -16,8 +16,13 @@ GNU GENERAL PUBLIC LICENSE
  
 
 ## Usage
+To use SiamU-Net you do not have to change anything.
+To use a standard U-Net, you have to change the model and Dataloader in line 11
+"from module import spidermodel as md, ISBI2012Data_2 as ISBI" for SiamU-Net
+"from module import model as md, ISBI2012Data as ISBI" for a U-Net
+
 ```
-usage: /python main.py 
+usage: start main_isbi.py 
 ```
 
 ## Settings 
@@ -39,23 +44,7 @@ Sacred is a tool to help you configure, organize, log and reproduce experiments.
 *   `txtinfo`                  save console output in txt
 *   `classweight`                 use classweights
 
-## Examples
-```
-python main.py
-```
-the txt file looks like this:
-```
-Dataset : ISBI2012
-Start Epoch : 0
-End Epoch : 100
-Learning rate: 0.001
-Momentum : 0.99
-Weight decay : 0
-Use padding : True
-Epoche [ 1] train_loss: 0.4911 val_loss: 0.4643 loop time: 9.96429
-Epoche [ 2] train_loss: 0.4630 val_loss: 0.5017 loop time: 5.41091
-Epoche [ 3] train_loss: 0.4460 val_loss: 0.4637 loop time: 5.45516
-```
+
 
 ## Sources
 U-Net: Convolutional Networks for Biomedical Image Segmentation   
@@ -65,3 +54,8 @@ Ronneberger, Olaf, Philipp Fischer, and Thomas Brox. "U-net: Convolutional netwo
 ISBI 2012 Segmentation Challenge   
 <http://brainiac2.mit.edu/isbi_challenge/home>   
 Ignacio Arganda-Carreras, Srinivas C. Turaga, Daniel R. Berger, Dan Ciresan, Alessandro Giusti, Luca M. Gambardella, Jürgen Schmidhuber, Dmtry Laptev, Sarversh Dwivedi, Joachim M. Buhmann, Ting Liu, Mojtaba Seyedhosseini, Tolga Tas
+
+Master Thesis:
+
+Manuel Danner
+SiamU-Net, "Semantic Segmentation of Image Sequences Using a Spatio-Temporal U-Net", TU Wien
